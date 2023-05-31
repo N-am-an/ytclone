@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Playing video</title>
+</head>
+<body>
+    <nav id="top">
+      <div class="side">
+        <img src="./images/side nav.png" alt="" class="menu-icon">
+      </div>
+      <div class="logo">
+        <img src="./images/Screenshot 2023-03-05 192410.png" alt="">
+    </div>
+    <div id="searchbar">
+        <input type="text" placeholder="Search">
+        <button><img src="./images/search-icon-png-8.png" alt=""></button>
+    </div>
+    
+    </nav>
+    <div class="container">
+        <video controls autoplay>
+            <source id="videoPlayer" src="" type="video/mp4">
+        </video>
+    </div>
+    <script>
+// Get the video file path from the URL parameter
+const urlParams = new URLSearchParams(window.location.search);
+const videoPath = urlParams.get('path');
+// Set the video source to the extracted file path
+const videoPlayer = document.getElementById('videoPlayer');
+videoPlayer.src = videoPath;
+
+    </script>
+</body>
+</html>
