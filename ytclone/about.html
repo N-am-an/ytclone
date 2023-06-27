@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - YouTube Clone</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease;
+}
+
+header {
+    background-color: #ff1616;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.about-section {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: justify;
+}
+
+footer {
+  background-color: #ff1616;
+  text-align: center;
+  padding: 10px;
+}
+
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.dark-mode-toggle::before {
+  content: "☀️";
+}
+
+.dark-mode.dark-mode-toggle::before {
+  content: "🌙";
+}
+
+  </style>
+</head>
+<body class="dark-mode">
+  <header>
+    <nav>
+      <ul>
+      </ul>
+    </nav>
+  </header>
+  <section class="about-section">
+    <h1>About Us</h1>
+    <p>Welcome to our YouTube Clone! Our platform aims to provide a familiar video streaming experience similar to the original YouTube. While our clone may not include all the advanced features, we offer essential functionalities for users to enjoy watching videos and engaging with content.</p>
+    <p>At our YouTube Clone, you can explore a wide range of videos across various categories. From music and entertainment to educational and informative content, we strive to provide a diverse selection that caters to different interests.</p>
+    <p>Our team of developers has worked diligently to recreate the core functionalities of YouTube, allowing you to search for videos, watch them with basic playback controls, and interact with other users through comments.</p>
+    <p>While we understand that our clone has limitations, such as the inability to upload videos and the absence of advanced features like personalized recommendations, we aim to provide a user-friendly and enjoyable video streaming experience within our scope.</p>
+    <p>Thank you for choosing our YouTube Clone. We hope you have a great time exploring and watching the videos on our platform!</p>
+  </section>
+  <footer>
+    <p>&copy; 2023 YouTube Clone. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const darkModeToggle = document.querySelector('.dark-mode-toggle');
+    const body = document.body;
+
+    darkModeToggle.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+    });
+  </script>
+</body>
+</html>

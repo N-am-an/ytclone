@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Playing video</title>
+</head>
+<body>
+    <nav id="top">
+      <div class="side">
+        <!-- <img src="./images/side nav.png" alt="" class="menu-icon"> -->
+      </div>
+      <div class="logo">
+        <a href="index.html"><img src="./images/Screenshot 2023-03-05 192410.png" alt=""></a> 
+    </div>
+    <div id="searchbar">
+      <input id="searchbox" type="text" placeholder="Search">
+      <button id="searchbtn"><img src="./images/search-icon-png-8.png" alt=""></button>
+      <div class="result-box">
+     </div>
+  </div>
+    </nav>
+    <div class="container">
+        <video controls autoplay>
+            <source id="videoPlayer" src="./videos/moonkinght.mp4" type="video/mp4">
+        </video>
+    </div>
+    <div class="vidinfo">
+      <p>A man without love(MOON KNIGHT) -Engelbert Hemperdinck</p>
+       <p id="upload">&bull;Uploaded 1 month ago</p>
+    </div>
+    <div class="like">
+      <p id="count"></p> <p>views</p>
+
+      <div class="btn"><img class="image" src="./images/like.png" alt=""> </div>
+      
+      <p id="likecount"></p>
+    </div>
+    <div class="comments">
+      <div class="comment-input">
+      <form>  
+        <input type="text" placeholder="Enter your Username"  id="user" autocomplete="off">
+        <input type="text" placeholder="Add Comment" id="comment" autocomplete="off"> 
+        <button class="sub">Submit</button>
+      </form>
+      </div>
+      <div class="comment-container">
+      <!-- <div class="comment-card"> -->
+        <!-- <div class="letter">
+          N 
+        </div>
+        <div class="uname">
+          Naman
+        </div>
+        <div class="card">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident mollitia repellat facilis.
+        </div>
+
+      </div> -->
+    </div>
+    </div>
+    <div class="videocontainer">
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video.html"><img src="./images/diwali.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video.html">Raja Jait Singh Diwali fest vlog❤️❤️</a> 
+      </div>
+   </div>
+  </div>
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video3.html"><img src="./images/hcf.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video3.html">Hotel California - the Eagles</a> 
+      </div>
+   </div>
+  </div>
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video2.html"><img src="./images/anotherone.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video2.html">Another one bites the dust - Queen</a> 
+      </div>
+   </div>
+  </div>
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video4.html"><img src="./images/batman.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video4.html">Something in the way-Nirvana</a> 
+      </div>
+   </div>
+  </div>
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video6.html"><img src="./images/khnh.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video6.html">Kal ho Na Ho SRK Speech-BEST of SRK</a> 
+      </div>
+   </div>
+  </div>
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video5.html"><img src="./images/kabircafe.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video5.html">Kya leke aya jagat mein - Kabir cafe</a> 
+      </div>
+   </div>
+  </div>
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video7.html"><img src="./images/kindichale.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video7.html">Kindi chale tu Pahadi folk</a> 
+      </div>
+   </div>
+  </div>
+        <div class="vidlist">
+            <div class="thumbnail">
+        <a href="video8.html"><img src="./images/letitbe.png" alt=""></a>
+      </div>  
+      <div class="flex">
+       <div class="channel">
+        <img src="./images/channel.jpg" alt="">
+      </div>
+      <div class="info">
+      <a href="video8.html">Let it be  -The Beatles</a> 
+      </div>
+   </div>
+  </div>
+    </div>
+    <script src="vid.js"></script>
+    <script src="searchbar.js"></script>
+    <script>
+ var counter=document.getElementById('count');
+ var likes=document.getElementById('likecount');
+ var btn=document.querySelector('.btn');
+ var img=document.querySelector(".image")
+ var clickCount=0;
+ var likeCount=0;
+ if (localStorage.getItem("count9")) {
+  clickCount = parseInt(localStorage.getItem("count9"));
+}
+if (localStorage.getItem("likecount9")) {
+  
+  likeCount=parseInt(localStorage.getItem('likecount9'));
+}
+
+counter.textContent=clickCount;
+likes.textContent=likeCount;
+ clickCount++;
+ localStorage.setItem("count9", clickCount.toString());
+ counter.textContent=clickCount;
+// localStorage.removeItem("count");
+console.log(clickCount);
+btn.addEventListener("click",function(){
+ likeCount++;
+ localStorage.setItem("likecount9", likeCount.toString());
+ likes.textContent=likeCount;
+ img.src="./images/liked.png";
+//  btn.classList.toggle("liked");
+})
+console.log(likeCount);
+    </script>
+</body>
+</html>
